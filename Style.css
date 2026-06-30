@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeitos de Luzes e Cores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        section {
+            background: white;
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 700px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,.15);
+        }
+
+        .disco {
+            width: 220px;
+            height: 220px;
+            margin: 20px auto;
+            border-radius: 50%;
+            background: conic-gradient(
+                red,
+                orange,
+                yellow,
+                green,
+                blue,
+                indigo,
+                violet,
+                red
+            );
+            animation: girar 2s linear infinite;
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #led,
+        #rgb {
+            width: 120px;
+            height: 120px;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+
+        #led {
+            background: red;
+            animation: brilho 3s infinite;
+        }
+
+        @keyframes brilho {
+            0% {
+                opacity: .2;
+                box-shadow: 0 0 5px red;
+            }
+            50% {
+                opacity: 1;
+                box-shadow: 0 0 60px red;
+            }
+            100% {
+                opacity: .2;
+                box-shadow: 0 0 5px red;
+            }
+        }
+
+        #rgb {
+            background: red;
+            box-shadow: 0 0 40px red;
+            transition: 1s;
+        }
+
+        p 
