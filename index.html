@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disco de Newton e LEDs</title>
+    <title>Simulação RGB e Disco de Newton</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Simulação: Disco de Newton e LEDs</h1>
+<h1>Simulações de Cores</h1>
 
+<!-- ETAPA 1 -->
 <section>
-    <h2>Etapa 1 – Disco de Newton</h2>
+    <h2>Etapa 1 - Disco de Newton</h2>
 
     <div class="disco"></div>
 
     <p>
-        Quando o disco gira rapidamente, nosso olho mistura as cores
-        (vermelho, laranja, amarelo, verde, azul, anil e violeta),
-        produzindo a sensação de uma cor próxima do branco.
+        Quando o Disco de Newton gira rapidamente, nosso cérebro mistura as
+        cores do espectro visível. Essa mistura faz com que enxerguemos uma
+        cor próxima do branco.
     </p>
 </section>
 
+<!-- ETAPA 2 -->
 <section>
-    <h2>Etapa 2 – LED Fade-In e Fade-Out</h2>
+    <h2>Etapa 2 - LED Fade In / Fade Out</h2>
 
-    <div id="led"></div>
+    <div class="led-fade"></div>
 
     <p>
-        O LED aumenta e diminui o brilho gradualmente.
-        Esse efeito simula o controle de intensidade de um LED real
-        usando PWM (Modulação por Largura de Pulso).
+        O LED aumenta e diminui sua intensidade de brilho.
+        Esse efeito representa o controle de brilho utilizado em LEDs reais,
+        normalmente feito por PWM (Pulse Width Modulation).
     </p>
 </section>
 
+<!-- ETAPA 3 -->
 <section>
-    <h2>Etapa 3 – LED RGB</h2>
+    <h2>Etapa 3 - LED RGB</h2>
 
-    <div id="rgb"></div>
+    <div id="rgb" class="led-rgb"></div>
 
     <p>
-        O LED RGB combina as cores vermelha, verde e azul para formar
-        novas cores, como amarelo, ciano, roxo e branco.
-        Assim como no Disco de Newton, ocorre a mistura de cores.
+        O LED RGB muda entre vermelho, verde, azul e suas combinações
+        (amarelo, ciano, magenta e branco). Assim como no Disco de Newton,
+        ocorre a mistura de cores para formar novas tonalidades.
     </p>
 </section>
 
