@@ -3,53 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulação RGB e Disco de Newton</title>
+    <title>Simulação - Disco de Newton e LEDs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Simulações de Cores</h1>
+    <h1>Simulação: Disco de Newton e LEDs</h1>
 
-<!-- ETAPA 1 -->
-<section>
-    <h2>Etapa 1 - Disco de Newton</h2>
+    <!-- Etapa 1 -->
+    <section>
+        <h2>Etapa 1 – Disco de Newton</h2>
 
-    <div class="disco"></div>
+        <div class="disco"></div>
 
-    <p>
-        Quando o Disco de Newton gira rapidamente, nosso cérebro mistura as
-        cores do espectro visível. Essa mistura faz com que enxerguemos uma
-        cor próxima do branco.
-    </p>
-</section>
+        <p>
+            Quando o disco gira rapidamente, nosso cérebro mistura as cores
+            do espectro (vermelho, laranja, amarelo, verde, azul, anil e violeta),
+            produzindo uma sensação de cor próxima do branco.
+        </p>
+    </section>
 
-<!-- ETAPA 2 -->
-<section>
-    <h2>Etapa 2 - LED Fade In / Fade Out</h2>
+    <!-- Etapa 2 -->
+    <section>
+        <h2>Etapa 2 – LED Fade-In e Fade-Out</h2>
 
-    <div class="led-fade"></div>
+        <div id="led"></div>
 
-    <p>
-        O LED aumenta e diminui sua intensidade de brilho.
-        Esse efeito representa o controle de brilho utilizado em LEDs reais,
-        normalmente feito por PWM (Pulse Width Modulation).
-    </p>
-</section>
+        <p>
+            O LED aumenta e diminui o brilho continuamente.
+            Esse efeito simula o controle de intensidade de um LED real
+            utilizando PWM (Modulação por Largura de Pulso).
+        </p>
+    </section>
 
-<!-- ETAPA 3 -->
-<section>
-    <h2>Etapa 3 - LED RGB</h2>
+    <!-- Etapa 3 -->
+    <section>
+        <h2>Etapa 3 – LED RGB</h2>
 
-    <div id="rgb" class="led-rgb"></div>
+        <div id="rgb"></div>
 
-    <p>
-        O LED RGB muda entre vermelho, verde, azul e suas combinações
-        (amarelo, ciano, magenta e branco). Assim como no Disco de Newton,
-        ocorre a mistura de cores para formar novas tonalidades.
-    </p>
-</section>
+        <p>
+            O LED RGB mistura as cores vermelha, verde e azul para formar
+            novas cores, como amarelo, ciano, magenta e branco.
+            Assim como no Disco de Newton, ocorre a mistura de cores.
+        </p>
+    </section>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,23 +1,35 @@
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:#111;
-    color:white;
+    background:#f2f2f2;
     text-align:center;
+    margin:20px;
+}
+
+h1{
+    color:#333;
 }
 
 section{
-    margin:50px;
+    background:white;
+    width:80%;
+    max-width:700px;
+    margin:25px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
 }
 
-/* ========================= */
-/* ETAPA 1 */
-/* ========================= */
+/* ===========================
+   DISCO DE NEWTON
+=========================== */
 
 .disco{
     width:220px;
     height:220px;
-    margin:auto;
+    margin:20px auto;
     border-radius:50%;
+    border:4px solid #000;
 
     background:conic-gradient(
         red,
@@ -30,7 +42,7 @@ section{
         red
     );
 
-    animation:girar 2s linear infinite;
+    animation:girar .5s linear infinite;
 }
 
 @keyframes girar{
@@ -45,62 +57,53 @@ section{
 
 }
 
-/* ========================= */
-/* ETAPA 2 */
-/* ========================= */
+/* ===========================
+   LED FADE
+=========================== */
 
-.led-fade{
+#led{
 
-    width:120px;
-    height:120px;
+    width:90px;
+    height:90px;
+    margin:20px auto;
 
     border-radius:50%;
 
-    background:red;
+    background:#00ff00;
 
-    margin:auto;
-
-    animation:fade 3s infinite alternate;
-
-    box-shadow:0 0 20px red;
+    animation:fade 2s infinite alternate;
 
 }
 
 @keyframes fade{
 
     from{
-
         opacity:.2;
-        box-shadow:0 0 10px red;
-
+        box-shadow:0 0 5px #00ff00;
     }
 
     to{
-
         opacity:1;
-        box-shadow:0 0 80px red;
-
+        box-shadow:0 0 40px #00ff00;
     }
 
 }
 
-/* ========================= */
-/* ETAPA 3 */
-/* ========================= */
+/* ===========================
+   LED RGB
+=========================== */
 
-.led-rgb{
+#rgb{
 
-    width:120px;
-    height:120px;
+    width:90px;
+    height:90px;
 
-    margin:auto;
+    margin:20px auto;
 
     border-radius:50%;
 
     background:red;
 
-    box-shadow:0 0 40px red;
-
-    transition:.8s;
+    transition:.6s;
 
 }

@@ -1,63 +1,29 @@
-# Simulação de Cores - Disco de Newton e LED RGB
 
-## Descrição
+# Simulação: Disco de Newton e LEDs
 
-Este projeto demonstra conceitos de mistura de cores utilizando HTML, CSS e JavaScript.
+## Objetivo
 
-## Funcionalidades
+Este projeto demonstra três conceitos relacionados à mistura de cores e iluminação utilizando HTML, CSS e JavaScript.
 
-### Etapa 1 - Disco de Newton
-- Disco dividido em sete cores.
-- Animação de rotação contínua.
-- Explicação da percepção da luz branca pela mistura das cores.
+## Etapas
 
-### Etapa 2 - LED Fade-In e Fade-Out
-- LED com animação de aumento e diminuição do brilho.
-- Simulação do controle de intensidade utilizado em LEDs reais por PWM.
+### Etapa 1 – Disco de Newton
+Um disco dividido nas sete cores do espectro gira rapidamente, simulando a mistura das cores e a percepção da cor branca.
 
-### Etapa 3 - LED RGB
-- LED alternando entre:
-  - Vermelho
-  - Verde
-  - Azul
-  - Amarelo
-  - Ciano
-  - Magenta
-  - Branco
-- Demonstra a mistura aditiva de cores.
+### Etapa 2 – LED Fade-In e Fade-Out
+Um LED aumenta e diminui seu brilho continuamente, simulando o controle de intensidade utilizando PWM.
 
-## Tecnologias
+### Etapa 3 – LED RGB
+Um LED RGB alterna automaticamente entre vermelho, verde, azul e outras combinações, mostrando como a mistura das cores forma novas tonalidades.
+
+## Tecnologias utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
 
-## Estrutura do Projeto
-
-```
-projeto/
-│
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── LICENSE
-```
-
 ## Como executar
 
-1. Baixe ou clone este repositório.
-2. Abra o arquivo `index.html` em qualquer navegador.
-3. As animações iniciarão automaticamente.
+Abra o arquivo `index.html` em qualquer navegador.
 
-## Objetivo
-
-Demonstrar visualmente:
-- O Disco de Newton;
-- O efeito Fade-In/Fade-Out em LEDs;
-- O funcionamento de um LED RGB;
-- A mistura aditiva de cores.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT.
+## Autor

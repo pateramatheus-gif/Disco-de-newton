@@ -1,7 +1,7 @@
+
 const rgb = document.getElementById("rgb");
 
 const cores = [
-
     "red",
     "green",
     "blue",
@@ -9,27 +9,19 @@ const cores = [
     "cyan",
     "magenta",
     "white"
-
 ];
 
 let indice = 0;
 
-function trocarCor(){
+setInterval(() => {
 
-    rgb.style.background = cores[indice];
-
-    rgb.style.boxShadow = `0 0 50px ${cores[indice]}`;
+    rgb.style.backgroundColor = cores[indice];
+    rgb.style.boxShadow = `0 0 30px ${cores[indice]}`;
 
     indice++;
 
     if(indice >= cores.length){
-
         indice = 0;
-
     }
 
-}
-
-trocarCor();
-
-setInterval(trocarCor,1000);
+},1000);
